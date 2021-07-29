@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
+const { findAll } = require('../../models/Product');
 
 // The `/api/categories` endpoint
 
@@ -36,9 +37,7 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   // create a new category
   try {
-    const CategoryData = await Category.create({
-      product_id: req.body.product_id,
-    });
+    const CategoryData = await Category.create(req.body);
     res.status(200).json(CategoryData);
   } catch (err) {
     res.status(400).json(err);
@@ -47,17 +46,25 @@ router.post('/', async (req, res) => {
 
 
 
-router.put('/:id', (req, res) => {
-  // update a category by its `id` value
-  Category.update(req.body, {
+router.put('/:id', async (req, res) => {
+  // update a tag's name by its `id` value
+  try {
+    const CategoryData = await Category.update(req.body, {
     where: {
       id: req.params.id,
+    },
+    });
+
+    if (!CategoryData) {
+      res.status(404).json({ message: 'No Tag found with that id!' });
+      return;
     }
-    .catch((err) => {
+    res.status(200).json(CategoryData);
+  }
+    catch(err) {
     // console.log(err);
     res.status(400).json(err);
-    })
-});
+    }
 });
 
 
