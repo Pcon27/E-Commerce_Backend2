@@ -41,9 +41,9 @@ email: (pconsagra@g.ucla.edu)
 Github: (https://github.com/pcon27)
 
 ## Video 
-Link: (https://drive.google.com/file/d/1j308qtX_onfA_NBeej7z2H643zupnG7K/view?usp=sharing)
+Link: (https://drive.google.com/file/d/16N1PdQqXbhzI0XPc2CLjkv7rZZvsiI2Y/view?usp=sharing)
 
 ## Images of the Code
-![alt text](https://github.com/Pcon27/Employee_tracker/blob/b3dd394cbdc46347afb2606c6a7d73afecf2089a/assets/Employee%20Tracker%20Image%201.png)
+![alt text](https://github.com/Pcon27/E-Commerce_Backend2/blob/9cafe39117401cac38ae655eb9acfee6d5d72bc2/Assets/Category%20Routes.png)
 
-![alt text](https://github.com/Pcon27/Employee_tracker/blob/b3dd394cbdc46347afb2606c6a7d73afecf2089a/assets/Employee%20Tracker%20Image%202.png)
+![alt text](https://github.com/Pcon27/E-Commerce_Backend2/blob/9cafe39117401cac38ae655eb9acfee6d5d72bc2/Assets/Tag%20Routes.png)
